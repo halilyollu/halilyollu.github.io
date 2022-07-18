@@ -1,0 +1,330 @@
+/*
+project name: one pages 
+project date: 30-Mayis 2022
+project author: Hamit Mızrak
+project version: v.1
+*/
+/* ############################################################################ */
+/* common property */
+*{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box; 
+}
+
+body{
+    /* font-family: 'Quicksand', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    background-image: url("./picture/background.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+::-webkit-scrollbar{
+    background: #80d7f9;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #5cb6db;
+    border-radius: 10px;
+}
+
+html{
+    font-size:20px;
+}
+
+ul{
+    list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+    margin-left:.7rem;
+    margin-right:.7rem;
+}
+
+
+/* ############################################################################ */
+/* line-clamp */
+.line_clamp3{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line_clamp4{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line_clamp5{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line_clamp6{
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line_clamp7{
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ############################################################################ */
+
+
+/*  nav */
+#navbar{
+    opacity:.9;
+}
+
+#logo_div:hover{
+    box-shadow: 1px 1px 4px 1px #5cb6db;
+}
+
+#navbar_id ul>li>a{
+    font-size:.8rem;
+}
+
+#navbar_id ul>li>a>i{
+    margin-right: .5rem;
+    font-size:.8rem;
+    color:white;
+}
+
+#right_navbar>button,a{
+    font-size:.8rem;
+}
+
+/* ############################################################################ */
+/* header */
+header{
+    z-index:-1;
+    height:50rem;
+    padding-top:15rem;
+}
+
+/* ##############################################################################*/
+/* main */
+
+/* section-1 */
+#ability {
+   padding: 6rem; 
+}
+
+#ability i{
+    color:#212529;
+    font-size: 3rem;
+}
+
+/* #ability,#section_3,#section_2,#section_6{
+    margin-bottom:6rem;
+} */
+
+#ability .card{
+    box-shadow: 1px 1px 8px 1px rgba(0,0,0,.8);
+}
+
+#ability .card:hover{
+   cursor:pointer;
+   opacity:.7;
+}
+
+/* section-2: blog */
+#section_2{
+    opacity:.9;
+    padding:6rem;
+}
+
+#section_2 .card{
+margin-bottom:2rem;
+}
+
+#seciton_2 img{
+    height: 300px;
+}
+
+#section_2 .card .card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#section_2 .card>img:hover{
+    opacity:.8;
+    cursor:pointer;
+}
+
+
+/* section-3 */
+#section_3{
+    padding:9rem;
+}
+#newspaper_id p{
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 3rem;
+    /* column-count: 3;
+    column-rule:solid rgba(0,0,0,.6); */
+}
+
+/* back_to_top */
+#back_top{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width:3rem;
+    padding-top:.5rem;
+    margin-right: .4rem;
+    margin-bottom: .4rem;
+    border-radius: .4rem;
+    opacity:.7;
+    display: none;
+}
+
+#back_top:hover{
+    opacity:.9;
+}
+
+#section_6{
+    padding:8rem;
+
+}
+
+/* ################################################################# */
+
+#contact_form>.row>div{
+    margin-bottom: .6rem;
+}
+
+#contact_form{
+    background: transparent;
+    padding:1rem;
+    
+}
+
+/* ################################################################# */
+
+/* footer */
+footer{
+    min-height: 20rem;
+    width: auto;
+    color:white;
+}
+
+#address_id i{
+    margin-right:.6rem;
+    color:blueviolet;
+}
+
+#address_id a{
+    color:chartreuse;
+    font-size:.8rem;
+}
+
+#copy_right{
+    background: #5cb6db!important;
+}
+
+.clear:before{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+#social_media{
+    position: fixed;
+    right:0;
+    top:40%;
+}
+
+.fas{
+    cursor: pointer;
+}
+
+.ability_circle{
+    padding: 1rem;
+}
+
+.form-control::-webkit-input-placeholder {
+    color:#fff;
+}
+
+#section_7 img{
+    width: 300px;
+}
+
+@media screen and (max-width: 1400px){
+    #navbar_id ul>li>a{
+        font-size:.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #navbar_id ul>li>a{
+        font-size:.7rem;
+    }
+
+    #section_6{
+        padding:2rem;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #navbar_id ul>li>a{
+        font-size:.8rem;
+    }
+    
+    #navbar_id ul{
+        border-bottom: 1px solid white;
+    }
+    
+    .ability_circle{
+        padding: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    #section_3{
+        padding:3rem;
+    }
+
+    #section_6{
+        padding: 3rem;
+    }
+
+    #section_7 img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #ability{
+        padding:2rem;
+    }
+    
+    #section_2{
+        padding:1rem;
+    }
+}
