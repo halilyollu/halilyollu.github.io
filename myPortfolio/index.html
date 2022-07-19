@@ -343,14 +343,15 @@
             </div>
         </div>
         <script>
-            /* register value and validation*/
-            $(function () {
+           /* register value and validation*/
+           $(function () {
            $("#btnRegister").click(function () {
-               let email, password, name, surname;
+               let email, password, name, surname, repassword;
                name = jQuery.trim($("#registerName").val());
                surname = jQuery.trim($("#registerSurname").val());
                email = jQuery.trim($("#registerEmail").val());
                password = jQuery.trim($("#registerPassword").val());
+               repassword = jQuery.trim($("#registerRepassword").val());
 
                //validition fullName
                if (name == "" && surname == "") {
