@@ -280,11 +280,43 @@ footer{
     #navbar_id ul>li>a{
         font-size:.5rem;
     }
+
+    .ability_circle{
+        padding: .6rem;
+    }
+
+    .progress{
+        height:.8rem;
+    }
+
+    #ability i{
+        font-size: 2.5rem;
+    }
+
+    .arrow{
+        font-size: 2.7rem;
+    }
 }
 
 @media screen and (max-width: 1200px){
     #navbar_id ul>li>a{
         font-size:.7rem;
+    }
+
+    .ability_circle{
+        padding: .5rem;
+    }
+
+    .progress{
+        height: .8rem;
+    }
+
+    #ability i{
+        font-size: 2rem;
+    }
+
+    .arrow{
+        font-size: 2.5rem;
     }
 
     #section_6{
@@ -339,6 +371,10 @@ footer{
 
     #section_2{
         padding:1rem;
+    }
+
+    .arrow{
+        font-size: 2rem;
     }
 
     #section_3{
