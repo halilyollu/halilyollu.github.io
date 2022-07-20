@@ -94,6 +94,11 @@ header{
     text-indent: 3rem;
 }
 
+#more {
+    display: none;
+}
+
+
 /* section-2 : yetenekler */
 #ability {
    padding: 6rem; 
