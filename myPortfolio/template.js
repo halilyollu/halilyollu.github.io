@@ -1,15 +1,12 @@
 let date = () => {
-  //alert("deneme")
-
-  document.getElementById("date_id").innerHTML=new Date().toLocaleDateString();
-  //$('#date_id').html( `tarih: ${new Date()}`);
-
-  //document.getElementById("date_id").innerText=new Date();
-  //$('#date_id').text(new Date());
-
-  //document.getElementById("date_id").style.backgroundColor="blue";
-  //document.getElementById("date_id").style.color="white";
- // $("#date_id").css("background-color","blue").css("color","white")
+    let i = 0;
+    if(i == 0){
+      document.getElementById("date_id").innerHTML=new Date().toLocaleString();
+      i = 1;
+    }else{
+      document.getElementById("date_id").innerHTML="";
+      i = 0;
+    }
 
  const cssObject={
      "color":"white",
