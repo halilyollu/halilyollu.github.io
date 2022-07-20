@@ -1,11 +1,14 @@
 let date = () => {
-    let i = 0;
-    if(i == 0){
-      document.getElementById("date_id").innerHTML=new Date().toLocaleString();
-      i = 1;
+    
+    let dateText = document.getElementById("date_id");
+    let dateBtn = document.getElementById("date_btn");
+  
+    dateText.innerHTML = new Date().toLocaleString();
+  
+    if(dateText.style.display == "none"){
+      dateText.style.display = "block";
     }else{
-      document.getElementById("date_id").innerHTML="";
-      i = 0;
+      dateText.style.display = "none";
     }
 
  const cssObject={
@@ -15,7 +18,6 @@ let date = () => {
      "padding":"1rem",
  }
  $("#date_id").css(cssObject);
-//autocomplete 
 }
 
 // backtotop start
